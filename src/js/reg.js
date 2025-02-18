@@ -1,7 +1,8 @@
-
-export default  class Validator {
-
-  validateUsername(name) {
-   return /^(?!.*\d{4,})[a-zA-Z][\da-zA-Z-_]*[a-zA-Z]$/.test(name)
+export default class Validator {
+  validateUsername(str) {
+      return /^[a-zA-Z][\d{0,3}a-zA-Z-_]*[a-zA-Z]$/.test(str)
   }
 }
+
+
+
